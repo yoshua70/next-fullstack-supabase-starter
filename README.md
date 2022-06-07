@@ -71,5 +71,8 @@ You can then use them in your project by importing all of the resolvers at once 
 import { resolvers } from "graphql/resolvers/generated/type-graphql";
 ```
 
+## License
+MIT
+
 ## Credits
 Inspired by [next-fullstack-starter](https://github.com/egoist/next-fullstack-starter) by [egoist](https://github.com/egoist).
