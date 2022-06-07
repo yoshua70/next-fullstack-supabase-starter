@@ -1,11 +1,12 @@
 # Next Fullstack Supabase Starter
-Next.js + Prisma + TailwindCSS + (Type-)Graphql + Supabase
+Next.js + Prisma + TailwindCSS + (Type-)Graphql + Apollo + Supabase
 
 ## Features
 - ORM with [Prisma](https://www.prisma.io/)
 - Resolvers generated with Prisma and [Type-Graphql](https://typegraphql.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Supabase](https://supabase.com/) integration (coming up)
+- GraphlQL server with [Apollo](https://www.apollographql.com/)
 
 ## Documentation
 ### Prerequisites
