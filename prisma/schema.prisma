@@ -1,0 +1,45 @@
+generator typegrapqhl {
+  provider           = "typegraphql-prisma"
+  output             = "../graphql/resolvers/generated/type-graphql"
+  emitTranspiledCode = true
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now())
+  title     String   @db.VarChar(255)
+  content   String?
+  published Boolean  @default(false)
+  author    Int
+  Profile   Profile  @relation(fields: [author], references: [id])
+}
+
+model Profile {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @unique
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now())
+  name      String?  @db.VarChar(255)
+  username  String   @unique @db.VarChar(255)
+  bio       String?
+  User      User     @relation(fields: [userId], references: [id])
+  Post      Post[]
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique @db.VarChar(255)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now())
+  Profile   Profile?
+}
