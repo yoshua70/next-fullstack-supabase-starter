@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",
+    "@supabase/supabase-js": "^1.35.3",
     "apollo-server-micro": "^3.8.2",
     "class-validator": "^0.13.2",
     "cors": "^2.8.5",
