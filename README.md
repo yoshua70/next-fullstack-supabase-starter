@@ -5,7 +5,7 @@ Next.js + Prisma + TailwindCSS + (Type-)Graphql + Apollo + Supabase
 - ORM with [Prisma](https://www.prisma.io/)
 - Resolvers generated with Prisma and [Type-Graphql](https://typegraphql.com/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Supabase](https://supabase.com/) integration (coming up)
+- [Supabase](https://supabase.com/) integration
 - GraphlQL server with [Apollo](https://www.apollographql.com/)
 
 ## How to use
@@ -47,3 +47,6 @@ graphql
 helpers # Generic helpers folders for things such as constants and function to be re-used throughout the project.
 lib # External libraries for import in other files.
 ```
+
+### Supabase
+The supabase client can be found inside of lib/supabase-client.ts.
