@@ -8,6 +8,13 @@ Next.js + Prisma + TailwindCSS + (Type-)Graphql + Apollo + Supabase
 - [Supabase](https://supabase.com/) integration (coming up)
 - GraphlQL server with [Apollo](https://www.apollographql.com/)
 
+## How to use
+Using yarn :
+```bash
+$ yarn create next-app [app-name] -e [this-repo-url]
+```
+That's it !
+
 ## Documentation
 ### Prerequisites
 Copy content inside of `.env.example` to `.env`.
