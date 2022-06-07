@@ -48,5 +48,19 @@ helpers # Generic helpers folders for things such as constants and function to b
 lib # External libraries for import in other files.
 ```
 
+### Coding style
+#### Import
+The `baseUrl` is set to the root of the project. You can directly import without worrying about relative path.
+
+#### Variable casing
+There are no components yet, but they should be in PascalCase or camelCase.
+
+#### Filename casing
+React components should be in PascalCase, pages and other files in kebab-case.
+
 ### Supabase
-The supabase client can be found inside of lib/supabase-client.ts.
+The supabase client can be found inside of lib/supabase-client.ts. You can then import inside of your files :
+```ts
+import {supabase} from "lib/supabase-client"
+```
+
