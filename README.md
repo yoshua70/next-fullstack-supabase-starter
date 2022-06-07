@@ -64,3 +64,5 @@ The supabase client can be found inside of lib/supabase-client.ts. You can then 
 import {supabase} from "lib/supabase-client"
 ```
 
+## Credits
+Inspired by [next-fullstack-starter](https://github.com/egoist/next-fullstack-starter) by [egoist](https://github.com/egoist).
